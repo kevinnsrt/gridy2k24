@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message From Kevin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #ffedd5;
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            margin: 0;
+        }
+        /* Tombol Back di kiri atas */
+        .back-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        /* Tombol Message From Kevin di tengah */
+        .center-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .btn-primary {
+            background-color: #f08a5d;
+            border: none;
+            font-weight: bold;
+        }
+        .btn-primary:hover {
+            background-color: #d76a4f;
+        }
+        .modal-content {
+            border-radius: 15px;
+        }
+        .modal-header {
+            background-color: #f08a5d;
+            color: white;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .modal-body {
+            background-color: #fff5e1;
+        }
+        .modal-footer {
+            background-color: #f9f7f3;
+        }
+    </style>
+</head>
+<body>      
+    <!-- Tombol Back di kiri atas -->
+    <a class="btn btn-primary back-btn" href="gallery.html">Back</a>
+
+    <!-- Tombol Message From Kevin di tengah -->
+    <div class="container text-center center-btn">
+        <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Click Me !
+        </a>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Happy New Year, Inggrid!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <p>As the clock strikes midnight and we welcome 2025, I find myself grateful for every moment we've shared and excited for the memories we'll create in the year ahead. May this year bring us even closer, filled with laughter, love, and countless beautiful moments together. Here’s to new adventures, dreams, and a love that continues to grow with each passing day. Cheers to us and to all that awaits in 2025!</p>
+                    
+                    <!-- Embedded Spotify Player -->
+                    <iframe 
+                        style="border-radius: 12px;" 
+                        src="https://open.spotify.com/embed/track/30CenAPBR2VmH91r4Um32b?utm_source=generator" 
+                        width="100%" height="80" frameborder="0" allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
